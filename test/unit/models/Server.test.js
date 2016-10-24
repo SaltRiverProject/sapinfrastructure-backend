@@ -1,5 +1,3 @@
-"use strict";
-
 var should = require('chai').should();
 
 const newServer = {
@@ -11,7 +9,6 @@ const newServer = {
     'saptestserver'
   ],
   sid: 'TST',
-  roles: [3],
   component: 1,
   location: 1
 };
@@ -63,7 +60,6 @@ describe('models:Server', () => {
       hostname: newServer.hostname
     })
     .then((servers) => {
-      sails.log.debug(servers);
       servers[0].should.contain.keys(
         'hostname',
         'cpu',

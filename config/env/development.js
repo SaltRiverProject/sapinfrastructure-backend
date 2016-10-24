@@ -7,6 +7,7 @@
 
 module.exports = {
   port: 1337,
+  ip: '0.0.0.0',
   log: {
     level: 'silly'
   },

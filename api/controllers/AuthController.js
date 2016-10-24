@@ -16,10 +16,11 @@ module.exports = {
    */
   login(req, res) {
     if (req.params.id === 'local') {
-      sails.log.debug(req.params.id)
       passport.authenticate('local', _.partial(sails.config.passport.onPassportAuth, req, res))(req, res);
-    } else {
-      passport.authenticate('ldap', _.partial(sails.config.passport.onPassportAuth, req, res))(req, res);
+    } else if (req.params.id === 'adfs'){
+      passport.authenticate('wsfed-saml2', { failureRedirect: '/', failureFlash: true })(req, res);
+    } else if (req.params.id === 'ldap'){
+      passport.authenticate('ldapauth', _.partial(sails.config.passport.onPassportAuth, req, res))(req, res);
     }
   },
 

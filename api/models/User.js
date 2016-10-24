@@ -47,6 +47,11 @@ module.exports = {
       defaultsTo: {}
     },
 
+    accountType: {
+      type: 'string',
+      defaultsTo: 'local'
+    },
+
     // associations
     groups: {
       collection: 'group',

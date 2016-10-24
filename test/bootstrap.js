@@ -5,15 +5,20 @@ var Barrels = require('barrels')
 before((done) => {
   Sails.lift(config, (error, server) => {
     if (error) return done(error);
+
     sails = server;
     var barrels = new Barrels();
     fixtures = barrels.data;
-
     barrels.populate([
-      'role'
+      'role',
+      'location',
+      'component',
+      'server',
+      'group',
+      'user'
     ], (err) => {
       if (err) {
-        sails.log.debug(err);
+        sails.log.error(err);
         return done(err);
       }
       done();

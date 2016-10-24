@@ -16,9 +16,10 @@ describe('models:Group', () => {
         group.should.contain.keys(
           'name',
           'accessLevel',
-          'description',
           'createdAt',
-          'updatedAt'
+          'updatedAt',
+          'users',
+          'id'
         )
         done();
       })

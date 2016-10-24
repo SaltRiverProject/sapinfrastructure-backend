@@ -7,14 +7,17 @@
 
 module.exports = {
   log: {
-    level: 'silent'
+    level: 'debug'
   },
   models: {
-    connection: 'memory',
+    connection: 'disk',
     migrate: 'drop'
   },
   policies: {
     '*': true
+  },
+  autoAdmin: {
+    enabled: false
   },
   hooks: {
     csrf: false,

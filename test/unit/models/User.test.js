@@ -29,6 +29,34 @@ describe('models:User', () => {
       .catch(done);
   });
 
-  it('Should assign a user to a group');
-  it('Should removee a user from a group');
+  it('Should assign a user to a group', (done) => {
+    User
+      .update({ id: fixtures.user[0].id }, { groups: [1,2] })
+      .then((user) => {
+        User
+          .findOne({ id: user[0].id })
+          .populate('groups')
+          .then((user) => {
+            user.groups[0].name.should.eql('Admins')
+            user.groups[1].name.should.eql('Users')
+
+            done();
+          });
+      })
+      .catch(done);
+  });
+  it('Should removee a user from a group', (done) => {
+    User
+      .update({ id: fixtures.user[0].id }, { groups: [2] })
+      .then((user) => {
+        User
+          .findOne({ id: user[0].id })
+          .populate('groups')
+          .then((user) => {
+            user.groups[0].name.should.not.eql('Admins')
+            done();
+          });
+      })
+      .catch(done);
+  });
 });

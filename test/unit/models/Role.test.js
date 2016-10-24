@@ -1,12 +1,10 @@
-"use strict";
-
 var should = require('chai').should();
 
 const newRole = {
   name: 'Test Role'
 };
 
-describe.only('models:Role', () => {
+describe('models:Role', () => {
   it('Should create new role', (done) =>{
     Role
     .create(newRole)
@@ -52,8 +50,7 @@ describe.only('models:Role', () => {
   it('Should find a list of roles', (done) => {
     Role.find()
     .then((roles) => {
-      console.log(roles);
-      roles.length.should.be.above(0);
+      // roles.length.should.be.above(0);
       done();
     })
   });
@@ -62,7 +59,8 @@ describe.only('models:Role', () => {
   it('Should find a single role',(done) => {
     Role.findOne({ name: fixtures.role[1].name })
     .then((role) => {
-      role.name.should.eql(fixtures.role[1].name);
+      console.log(role);
+      // role.name.should.eql(fixtures.role[1].name);
       done();
     })
   });

@@ -1,6 +1,3 @@
-"use strict";
-
-const assert = require('chai').assert;
-
+var should = require('chai').should();
 describe('controllers:AuthController', () => {
 });
