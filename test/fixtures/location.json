@@ -1,0 +1,12 @@
+[
+  {
+  	"name": "East Valley Service Center",
+  	"abbreviation": "EVS",
+    "id": 1
+  },
+  {
+  	"name": "Information Systems Building",
+  	"abbreviation": "ISB",
+    "id": 2
+  }
+]

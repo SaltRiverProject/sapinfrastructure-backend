@@ -1,0 +1,32 @@
+[
+  {
+    "username": "GarretKertzmann57",
+    "password": "12345",
+    "firstName": "Dangelo",
+    "lastName": "Muller",
+    "email": "Enid96@gmail.com",
+    "accountType": "local",
+    "groups": 1,
+    "id": 1
+  },
+  {
+    "username": "Jaden62",
+    "password": "12345",
+    "firstName": "Blanche",
+    "lastName": "Steuber",
+    "email": "Ivy96@hotmail.com",
+    "accountType": "local",
+    "groups": 1,
+    "id": 2
+  },
+  {
+    "username": "TerryHackett",
+    "password": "12345",
+    "firstName": "Diana",
+    "lastName": "Kunde",
+    "email": "Favian83@gmail.com",
+    "accountType": "local",
+    "groups": 2,
+    "id": 3
+  }
+]

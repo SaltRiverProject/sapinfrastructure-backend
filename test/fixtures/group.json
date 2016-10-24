@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Admins",
+    "description": "Default Admin Group",
+    "accessLevel": 3,
+    "id": 1
+  },
+  {
+    "name": "Users",
+    "description": "Default User Group",
+    "accessLevel": 1,
+    "id": 2
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "SAP Dialog",
+    "abbreviation": "SAPDI"
+  },
+  {
+    "name": "SAP Message",
+    "abbreviation": "SAPMS"
+  },
+  {
+    "name": "Vertex App",
+    "abbreviation": "VTX"
+  },
+  {
+    "name": "SAP Oracle DB",
+    "abbreviation": "DB"
+  },
+  {
+    "name": "SAP Oracle DG",
+    "abbreviation": "DG"
+  }
+]

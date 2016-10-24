@@ -1,0 +1,5 @@
+./test/bootstrap.js
+./test/unit/**/*.test.js
+--reporter progress
+--recursive
+--timeout 120s

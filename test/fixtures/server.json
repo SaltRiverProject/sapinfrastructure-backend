@@ -1,0 +1,67 @@
+[
+  {
+    "hostname": "srplec80",
+    "cpu": 1,
+    "ram": 16,
+    "swap": 20,
+    "dns": [
+      "sapeczdb"
+    ],
+    "sid": "ECZ",
+    "roles": [4],
+    "component": 1,
+    "location": 1
+  },
+  {
+    "hostname": "srplec81",
+    "cpu": 1,
+    "ram": 16,
+    "swap": 20,
+    "dns": [
+      "sapeczdg"
+    ],
+    "sid": "ECZ",
+    "roles": [5],
+    "component": 1,
+    "location": 1
+  },
+  {
+    "hostname": "srplec82",
+    "cpu": 1,
+    "ram": 16,
+    "swap": 20,
+    "dns": [
+      "sapeczd1"
+    ],
+    "sid": "ECZ",
+    "roles": [1],
+    "component": 1,
+    "location": 1
+  },
+  {
+    "hostname": "srplec83",
+    "cpu": 1,
+    "ram": 16,
+    "swap": 20,
+    "dns": [
+      "sapeczd1"
+    ],
+    "sid": "ECZ",
+    "roles": [1],
+    "component": 1,
+    "location": 1
+  },
+  {
+    "hostname": "srplec84",
+    "cpu": 1,
+    "ram": 16,
+    "swap": 20,
+    "dns": [
+      "sapeczm1"
+    ],
+    "sid": "ECZ",
+    "roles": [2],
+    "component": 1,
+    "location": 1
+  }
+]
