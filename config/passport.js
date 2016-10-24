@@ -11,27 +11,19 @@ const LocalStrategy = require('passport-local').Strategy;
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const LdapStrategy = require('passport-ldapauth');
-
+const config = require('./local.js');
 
 /**
  * Configuration object for LDAP Stratgery
  * @type {Object}
  * @private
  */
-const LDAP_STRATEGY_CONFIG = {
+const LDAP_STRATEGY_CONFIG = _.merge({}, {
   usernameField: 'username',
   passwordField: 'password',
   session: false,
   passReqToCallback: true,
-  server: {
-    url: 'ldap://phxlp-pdc02.devita.co:389',
-    searchBase: 'OU=Production,OU=DEVITA,DC=devita,DC=co',
-    bindDn: 'CN=Administrator,OU=Users,OU=ADMIN,OU=Production,OU=DEVITA,DC=devita,DC=co',
-    bindCredentials: 'GxgzE5vA',
-    domain: 'devita.co',
-    searchFilter: '(uid={{username}})'
-  }
-};
+}, config.connections.ldap);
 
 /**
  * Configuration object for local strategy
