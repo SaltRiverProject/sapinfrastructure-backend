@@ -14,25 +14,6 @@
 
 module.exports = {
   connections: {
-    ldap: {
-      url: 'ldap://srprhd03.srp.gov:389',
-			searchBase: 'OU=People,DC=srp,DC=gov',
-			domain: 'srpnet.com',
-      searchFilter: '(uid={{username}})'
-    },
-    /**
-     * MongoDB configuration
-     * @type {Object}
-     */
-    mongo: {
-      adapter: 'sails-mongo',
-      host: 'localhost',
-      port: 27017,
-      user: 'root',
-      password: '12345',
-      database: 'sails-rest-api'
-    },
-
     /**
      * Redis configuration
      * @type {Object}
@@ -54,21 +35,6 @@ module.exports = {
     },
 
     /**
-     * PostgreSQL configuration
-     * @type {Object}
-     */
-    postgresql: {
-      adapter: 'sails-postgresql',
-      database: 'sails-rest-api',
-      host: 'localhost',
-      user: 'root',
-      password: '12345',
-      port: 5432,
-      pool: false,
-      ssl: false
-    },
-
-    /**
      * MySQL configuration
      * @type {Object}
      */
@@ -82,56 +48,6 @@ module.exports = {
       charset: 'utf8',
       collation: 'utf8_swedish_ci'
     },
-
-    /**
-     * Microsoft SQL Server configuration
-     * @type {Object}
-     */
-    sqlserver: {
-      adapter: 'sails-sqlserver',
-      user: 'root',
-      password: '12345',
-      host: 'localhost',
-      database: 'sails-rest-api',
-      options: {
-        encrypt: false
-      }
-    },
-
-    /**
-     * OrientDB configuration
-     * @type {Object}
-     */
-    orientdb: {
-      adapter: 'sails-orientdb',
-      host: 'localhost',
-      port: 2424,
-      user: 'root',
-      password: '12345',
-      database: 'sails-rest-api',
-      options: {
-        databaseType: 'graph',
-        storage: 'plocal',
-        transport: 'binary',
-        decodeURIComponent: true,
-        removeCircularReferences: false,
-        unsafeDrop: false,
-        parameterized: true,
-        fetchPlanLevel: 1
-      }
-    },
-
-    /**
-     * DynamoDB configuration
-     * @type {Object}
-     */
-    dynamodb: {
-      adapter: 'sails-dynamodb',
-      accessKeyId: '',
-      secretAccessKey: '',
-      region: 'us-west-1'
-    },
-
     /**
      * FileMaker configuration
      * @type {Object}
