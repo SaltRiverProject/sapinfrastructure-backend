@@ -110,9 +110,16 @@ const _onLocalStrategyAuth = (req, username, password, next) => {
     .findOne({[LOCAL_STRATEGY_CONFIG.usernameField]: username})
     .populate('groups')
     .then(user => {
-      if (!user) return next(null, null, sails.config.errors.USER_NOT_FOUND);
-      if (!HashService.bcrypt.compareSync(password, user.password)) return next(null, null, sails.config.errors.USER_NOT_FOUND);
-      return next(null, user, {});
+      user.lastLogin = new Date()
+      user.save((err) => {
+        if (err) {
+          sails.log.error(err)
+          return next(err)
+        }
+        if (!user) return next(null, null, sails.config.errors.USER_NOT_FOUND);
+        if (!HashService.bcrypt.compareSync(password, user.password)) return next(null, null, sails.config.errors.USER_NOT_FOUND);
+        return next(null, user, {});
+      })
     })
     .catch(next);
 };
