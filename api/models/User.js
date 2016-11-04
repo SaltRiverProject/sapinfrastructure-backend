@@ -51,6 +51,13 @@ module.exports = {
       type: 'string',
       defaultsTo: 'local'
     },
+    lastLogin: {
+      type: 'date'
+    },
+    isDeleted: {
+      type: 'boolean',
+      defaultsTo: false
+    },
 
     // associations
     groups: {
@@ -58,10 +65,10 @@ module.exports = {
       via: 'users'
     },
     createdBy: {
-      model: 'User'
+      model: 'user'
     },
     updatedBy: {
-      model: 'User'
+      model: 'user'
     },
     toJSON() {
       let obj = this.toObject();

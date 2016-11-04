@@ -13,10 +13,8 @@ module.exports = (req, res) => {
   const Model = actionUtil.parseModel(req);
   let values = actionUtil.parseValues(req);
 
-  if (Model.autoCreatedBy === true) {
-    sails.log.debug('create() blueprint Override', req.user.id);
-    values.createdBy = req.user.id;
-  }
+  sails.log.debug('create() blueprint Override', req.user.id);
+  values.createdBy = req.user.id;
 
   Model
     .create(_.omit(values, 'id'))
