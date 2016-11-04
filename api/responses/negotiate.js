@@ -17,12 +17,23 @@ module.exports = function (error) {
   const statusCode = _.get(error, 'status') || _.get(error, 'oauthError') || 500;
   const config = {code, message, root};
 
+  if (statusCode === 401) {
+    sails.log.error(data, config)
+    return res.unauthorized(data, config)
+  }
 
-  if (statusCode === 401 && code !== 'E_INSUFFICIENT_AUTH') return res.unauthorized(data, config);
-  if (statusCode === 401 && code === 'E_INSUFFICIENT_AUTH')return res.insufficientAuth(data, config);
+  if (statusCode === 403 && code === 'E_INSUFFICIENT_AUTH') {
+    sails.log.error(data, config)
+    return res.insufficientAuth(data, config);
+  }
+
   if (statusCode === 403) return res.forbidden(data, config);
   if (statusCode === 404) return res.notFound(data, config);
-  if (statusCode >= 400 && statusCode < 500) return res.badRequest(data, config);
+  if (statusCode >= 400 && statusCode < 500) {
+    sails.log.error(data, config)
+    return res.badRequest(data, config);
+  }
 
+  sails.log.error(data, config)
   return res.serverError(data, config);
 };
