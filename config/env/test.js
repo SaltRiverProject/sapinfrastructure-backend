@@ -10,7 +10,7 @@ module.exports = {
     level: 'debug'
   },
   models: {
-    connection: 'disk',
+    connection: 'memory',
     migrate: 'drop'
   },
   policies: {
