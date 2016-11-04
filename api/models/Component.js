@@ -16,6 +16,15 @@ var Component = {
       required: true,
       unique: true
     },
+    abbreviation: {
+      type: 'string',
+      required: true
+    },
+
+    isDeleted: {
+      type: 'bool',
+      defaultsTo: false
+    },
 
     // associations
     servers: {

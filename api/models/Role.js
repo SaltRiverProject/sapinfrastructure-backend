@@ -10,7 +10,11 @@ var Role = {
     abbreviation: {
       type: 'string'
     },
-
+    isDeleted: {
+      type: 'bool',
+      defaultsTo: false
+    },
+    
     // associations
     servers: {
       collection: 'Server',

@@ -35,14 +35,32 @@ var Server = {
       type: 'json'
     },
 
+
     sid: {
       type: 'string',
       required: true
+    },
+    isDeleted: {
+      type: 'bool',
+      defaultsTo: false
     },
 
     // associations
     roles: {
       collection: 'role',
+      via: 'servers'
+    },
+
+    tags: {
+      model: 'tag'
+    },
+
+    tier: {
+      model: 'tier'
+    },
+
+    metadata: {
+      collection: 'metadata',
       via: 'servers'
     },
 

@@ -21,6 +21,10 @@ var Location = {
       required: true,
       unique: true
     },
+    isDeleted: {
+      type: 'bool',
+      defaultsTo: false
+    },
 
     // associations
     servers: {

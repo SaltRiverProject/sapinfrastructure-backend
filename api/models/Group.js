@@ -11,6 +11,12 @@ module.exports = {
       type: 'integer',
       defaultsTo: 1
     },
+    isDeleted: {
+      type: 'bool',
+      defaultsTo: false
+    },
+
+    // associations
     users: {
       collection: 'user',
       via: 'groups'
