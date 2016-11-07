@@ -11,6 +11,11 @@ module.exports = {
     .then(res.ok)
     .catch(res.negotiate)
   },
+  checkEmail: (req, res) => {
+    User.count({ email: req.body.email })
+    .then(res.ok)
+    .catch(res.negotiate)
+  },
   delete: (req, res) => {
     sails.log.debug(req.params.id)
     User.update(req.params.id, { isDeleted: true })
