@@ -19,6 +19,18 @@ module.exports = {
       '*': true
     },
 
+    AgentController: {
+      '*': ['isAuthenticated', 'isAdmin'],
+    },
+
+    CommentController: {
+      '*': ['isAuthenticated', 'isAdmin'],
+    },
+
+    MetadataController: {
+      '*': ['isAuthenticated', 'isAdmin'],
+    },
+
     UserController: {
       '*': ['isAuthenticated', 'isAdmin'],
       'create': ['isAuthenticated', 'isAdmin', 'AuditPolicy'],
