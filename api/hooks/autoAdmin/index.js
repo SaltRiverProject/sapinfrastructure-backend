@@ -46,39 +46,55 @@ autoAdmin = function (sails) {
       var config = sails.config.autoAdmin;
       sails.log.verbose(config);
 
+      var Groups = []
+
       if (!config.enabled) {
         sails.log.debug('hooks::autoAdmin - skipping initialization of the default admin account.');
         return next();
       }
 
       sails.after('hook:orm:loaded', function () {
-        async.each(config.groups, (group, cb) => {
+        async.each(config.groups, function (group, cb) {
           //findorcreate group
           Group.findOrCreate({
             name: group.name
           }, group)
           .then(function (group) {
             sails.log.debug('hooks::autoAdmin - created group', group.name);
+            Groups.push(group)
             cb();
           })
-          .catch((err) => {
+          .catch(function (err) {
             return cb(err);
           })
-        }, (err) => {
+        }, function (err) {
           if (err) {
             sails.log.error(err);
             throw err;
           }
+
           // create users
-          var newUser = _.merge(config.user);
+          var newUser = config.user
 
           return User.findOne({
             username: config.user.username
           })
           .then(function (user) {
+            var newUser = _.merge({}, config.user)
+            var groups = []
+
+            _.each(newUser.groups, function (group, index) {
+              var groupIndex = _.findIndex(Groups, { name: group })
+              if (groupIndex !== -1) {
+                groups.push(Groups[groupIndex].id)
+              }
+            })
+
+            newUser.groups = groups
             if (!user) {
-              return User.create(newUser)
-              .then((user) => {
+              return User
+              .create(newUser)
+              .then(function (user) {
                 sails.log.debug('hooks::autoAdmin - No default admin account exists, so i created it.');
                 return user;
               });
@@ -87,19 +103,19 @@ autoAdmin = function (sails) {
               return user;
             }
           })
-          .then((user) => {
+          .then(function (user) {
             return User.findOne({
               id: user.id
             })
             .populate('groups')
-            .then((user) => {
+            .then(function (user) {
               return user;
             })
-            .then((user) => {
+            .then(function (user) {
               _logUserInfo(user);
               return next();
             })
-            .catch((err) => {
+            .catch(function (err) {
               sails.log.error(err);
             });
           });

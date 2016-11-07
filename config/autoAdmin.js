@@ -6,7 +6,7 @@ module.exports.autoAdmin = {
     lastName: 'User',
     email: 'admin@admin.com',
     password: '12345',
-    groups: [1]
+    groups: ['Admins']
   },
   groups: [
     {
