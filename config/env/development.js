@@ -8,7 +8,7 @@
 module.exports = {
   port: 1337,
   log: {
-    level: 'silly'
+    level: 'debug'
   },
   models: {
     connection: 'disk',
