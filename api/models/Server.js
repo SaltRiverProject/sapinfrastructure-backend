@@ -41,7 +41,7 @@ var Server = {
       required: true
     },
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 
@@ -59,13 +59,17 @@ var Server = {
       model: 'tier'
     },
 
-    metadata: {
-      collection: 'metadata',
-      via: 'servers'
+    agent: {
+      model: 'agent'
     },
 
     component: {
       model: 'component'
+    },
+
+    comments: {
+      collection: 'comment',
+      via: 'server'
     },
 
     location: {

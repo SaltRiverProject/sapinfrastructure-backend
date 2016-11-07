@@ -11,10 +11,10 @@ var Role = {
       type: 'string'
     },
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
-    
+
     // associations
     servers: {
       collection: 'Server',

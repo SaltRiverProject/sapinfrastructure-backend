@@ -17,14 +17,14 @@ var Tag = {
     },
 
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 
     // associations
     servers: {
       collection: 'server',
-      via: 'metadata'
+      via: 'tags'
     },
 
     createdBy: {

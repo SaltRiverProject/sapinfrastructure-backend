@@ -22,7 +22,7 @@ var Component = {
     },
 
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 
@@ -39,4 +39,4 @@ var Component = {
     }
   }
 };
-module.export = Component;
+module.exports = Component;

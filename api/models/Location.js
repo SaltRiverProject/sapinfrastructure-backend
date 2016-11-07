@@ -22,7 +22,7 @@ var Location = {
       unique: true
     },
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 
@@ -39,4 +39,4 @@ var Location = {
     }
   }
 };
-module.export = Location;
+module.exports = Location;

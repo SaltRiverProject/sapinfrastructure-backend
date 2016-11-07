@@ -12,7 +12,7 @@ module.exports = {
       defaultsTo: 1
     },
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 

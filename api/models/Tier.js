@@ -22,7 +22,7 @@ var Tier = {
     },
 
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 
@@ -39,4 +39,4 @@ var Tier = {
     }
   }
 };
-module.export = Tier;
+module.exports = Tier;
