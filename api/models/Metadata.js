@@ -1,36 +1,38 @@
 /**
- * Server.js
+ * Metadata.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
-var Server = {
+var Metadata = {
   name: 'Metadata',
   autoPK: true,
   autoCreatedBy: true,
   attributes: {
     schema: true,
+    via: {
+      type: 'string',
+      defaultsTo: 'agent'
+    },
     key: {
       type: 'string',
       required: true
     },
-
     value: {
       type: 'string',
       required: true
     },
     isDeleted: {
-      type: 'bool',
+      type: 'boolean',
       defaultsTo: false
     },
 
     // associations
-    servers: {
-      collection: 'server',
+    agent: {
+      collection: 'Agent',
       via: 'metadata'
     },
-
     createdBy: {
       model: 'User'
     },
@@ -39,4 +41,4 @@ var Server = {
     }
   }
 };
-module.exports = Server;
+module.exports = Metadata;
