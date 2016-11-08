@@ -21,6 +21,9 @@ module.exports = {
 
     AgentController: {
       '*': ['isAuthenticated', 'isAdmin'],
+      register: true,
+      connect: ['AgentPolicy'],
+      report: ['AgentPolicy']
     },
 
     CommentController: {

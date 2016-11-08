@@ -1,12 +1,10 @@
+const crypto = require('crypto')
+
 var Agent = {
   name: 'Agent',
-  autoPK: false,
+  autoPK: true,
   autoCreatedBy: false,
   attributes: {
-    id: {
-      type: 'string',
-      primaryKey: true
-    },
     agentKey: {
       type: 'string'
     },
@@ -18,6 +16,7 @@ var Agent = {
       type: 'boolean',
       defaultsTo: false
     },
+
     // associations
     server: {
       model: 'server'
@@ -32,6 +31,11 @@ var Agent = {
     updatedBy: {
       model: 'User'
     }
+  },
+  beforeCreate(values, next) {
+    var hash = crypto.createHash('sha256').update(new Date().getTime().toString()).digest('hex')
+    values.agentKey = hash
+    next();
   }
 };
 module.exports = Agent;

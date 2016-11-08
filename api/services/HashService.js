@@ -1,6 +1,6 @@
 "use strict";
 
-const hash = require('sails-service-hash');
+const hash   = require('sails-service-hash');
 const config = require('../../config/services/hash');
 
 module.exports = {

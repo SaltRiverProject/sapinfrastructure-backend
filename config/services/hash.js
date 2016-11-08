@@ -3,7 +3,8 @@
 module.exports = {
   services: {
     hash: {
-      bcrypt: {}
+      bcrypt: {},
+      md5: {}
     }
   }
 };

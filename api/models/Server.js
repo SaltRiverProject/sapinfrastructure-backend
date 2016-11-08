@@ -16,7 +16,7 @@ var Server = {
       required: true,
       unique: true
     },
-
+    
     cpu: {
       type: 'integer',
       required: true
