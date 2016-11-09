@@ -15,38 +15,16 @@
 module.exports = {
   connections: {
     /**
-     * Redis configuration
-     * @type {Object}
-     */
-    redis: {
-      adapter: 'sails-redis',
-      port: 6379,
-      host: 'localhost',
-      password: '12345',
-      database: 'sails-rest-api',
-      options: {
-        parser: 'hiredis',
-        return_buffers: false,
-        detect_buffers: false,
-        socket_nodelay: true,
-        no_ready_check: false,
-        enable_offline_queue: true
-      }
-    },
-
-    /**
      * MySQL configuration
      * @type {Object}
      */
     mysql: {
       adapter: 'sails-mysql',
       host: 'localhost',
-      port: 3306,
+      port: 32771,
       user: 'root',
-      password: '12345',
-      database: 'sails-rest-api',
-      charset: 'utf8',
-      collation: 'utf8_swedish_ci'
+      database: 'sapinfrastructure_dev',
+      charset: 'utf8_unicode_ci'
     },
     /**
      * FileMaker configuration
