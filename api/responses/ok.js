@@ -15,9 +15,10 @@ module.exports = function (data, config) {
   const response = _.assign({
     code: _.get(config, 'code', 'OK'),
     message: _.get(config, 'message', 'Operation is successfully executed'),
-    data: data || {}
+    data: data || {},
+    status: _.get(config, 'status', 200)
   }, _.get(config, 'root', {}));
 
-  this.res.status(200);
+  this.res.status(response.status);
   this.res.jsonx(response);
 };
