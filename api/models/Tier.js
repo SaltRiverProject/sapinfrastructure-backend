@@ -8,7 +8,6 @@
 var Tier = {
   name: 'Tier',
   autoPK: true,
-  schema: true,
   autoCreatedBy: true,
   attributes: {
     name: {

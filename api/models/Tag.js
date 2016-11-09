@@ -10,7 +10,6 @@ var Tag = {
   autoPK: true,
   autoCreatedBy: true,
   attributes: {
-    schema: true,
     name: {
       type: 'string',
       required: true

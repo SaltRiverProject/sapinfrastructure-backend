@@ -10,7 +10,6 @@ var Metadata = {
   autoPK: true,
   autoCreatedBy: true,
   attributes: {
-    schema: true,
     via: {
       type: 'string',
       defaultsTo: 'agent'

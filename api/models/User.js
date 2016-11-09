@@ -6,7 +6,6 @@ var _ = require('lodash');
  */
 
 module.exports = {
-  schema: true,
   autoCreatedBy: true,
   attributes: {
     username: {

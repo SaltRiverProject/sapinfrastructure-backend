@@ -10,13 +10,12 @@ var Server = {
   autoPK: true,
   autoCreatedBy: true,
   attributes: {
-    schema: true,
     hostname: {
       type: 'string',
       required: true,
       unique: true
     },
-    
+
     cpu: {
       type: 'integer',
       required: true

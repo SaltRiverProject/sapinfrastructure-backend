@@ -1,6 +1,5 @@
 var Role = {
   name: 'Role',
-  schema: true,
   attributes: {
     name: {
       type: 'text',

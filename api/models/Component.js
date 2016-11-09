@@ -8,7 +8,6 @@
 var Component = {
   name: 'Component',
   autoPK: true,
-  schema: true,
   autoCreatedBy: true,
   attributes: {
     name: {

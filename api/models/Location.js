@@ -7,7 +7,6 @@
 
 var Location = {
   name: 'Location',
-  schema: true,
   autoCreatedBy: true,
   attributes: {
     name: {
