@@ -1,5 +1,5 @@
 "use strict";
-
+var _ = require('lodash')
 /**
  * AgentController
  * @description :: Server-side logic for manage Components
@@ -10,30 +10,74 @@ module.exports = {
     pluralize: false
   },
   report: (req, res) => {
-    sails.log.debug(req.server, req.agent)
-    Metadata.create({
-      key: 'key',
-      value: 'value',
-      agent: req.agent.id,
-      via: 'agent'
+    var info = req.body
+    var agent = req.agent
+    var preppedInfo = []
+    _.each(info.osinfo, function (value, key) {
+      preppedInfo.push({
+        key: key,
+        value: value,
+        via: 'agent',
+        agent: agent.id,
+        type: 'osinfo'
+      })
     })
+
+    _.each(info.cpu, function (value, key) {
+      preppedInfo.push({
+        key: key,
+        value: value,
+        via: 'agent',
+        agent: agent.id,
+        type: 'cpuinfo'
+      })
+    })
+
+    _.each(info.memory, function (value, key) {
+      preppedInfo.push({
+        key: key,
+        value: value,
+        via: 'agent',
+        agent: agent.id,
+        type: 'memory'
+      })
+    })
+
+    _.each(info.swap, function (value, key) {
+      preppedInfo.push({
+        key: key,
+        value: value,
+        via: 'agent',
+        agent: agent.id,
+        type: 'swap'
+      })
+    })
+
+    // sails.log.debug(JSON.stringify(preppedInfo, null, 2))
+    Metadata
+    .create(preppedInfo)
     .then((metadata) => {
       res.ok(metadata)
+    })
+    .catch((error) => {
+      sails.log.error(error)
+      res.negotiate(error)
     })
   },
   connect: (req, res) => {
     if (req.isSocket) {
-      sails.log.debug(req.body)
+      sails.log.debug('Updating Agent model with connected: true, socketId:', req.socket.id)
       Agent.update({
         id: req.agent.id
       },
       {
-        connected: true
+        connected: true,
+        socketId: req.socket.id
       })
       .then((agent) => {
         agent = agent[0]
-        Agent.subscribe(req, 'agents-room-' + agent.id)
-        sails.log.debug('Agent subscribed to room agents-room-' + agent.id)
+        sails.sockets.join(req, ['agents', 'agent-' + agent.id])
+        sails.log.debug('Agent id:', agent.id, 'socketId:', agent.socketId, 'subscribed to rooms [\'agent-' + agent.id, '\', \'agents\']')
         return res.ok(agent)
       })
     }
@@ -45,7 +89,7 @@ module.exports = {
     const ipv6 = req.body.ipv6
 
     Server.findOne({
-      hostname: 'SRPLEC00'
+      hostname: hostname
     })
     .then((server) => {
       if (!server) {

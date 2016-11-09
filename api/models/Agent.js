@@ -16,6 +16,9 @@ var Agent = {
       type: 'boolean',
       defaultsTo: false
     },
+    socketId: {
+      type: 'string'
+    },
 
     // associations
     server: {

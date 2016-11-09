@@ -19,12 +19,14 @@ var Metadata = {
       required: true
     },
     value: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
     isDeleted: {
       type: 'boolean',
       defaultsTo: false
+    },
+    type: {
+      type: 'string'
     },
 
     // associations
