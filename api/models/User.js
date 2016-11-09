@@ -41,11 +41,6 @@ module.exports = {
       url: true
     },
 
-    socialProfiles: {
-      type: 'object',
-      defaultsTo: {}
-    },
-
     accountType: {
       type: 'string',
       defaultsTo: 'local'
