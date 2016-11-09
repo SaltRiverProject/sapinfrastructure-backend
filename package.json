@@ -23,7 +23,8 @@
     "sails-redis": "^0.10.7",
     "sails-service-cipher": "^3.2.1",
     "sails-service-hash": "^3.2.1",
-    "sails-service-mailer": "^3.2.1"
+    "sails-service-mailer": "^3.2.1",
+    "socket.io-redis": "^1.1.1"
   },
   "devDependencies": {
     "chai": "3.4.1",
