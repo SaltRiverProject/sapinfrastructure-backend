@@ -10,8 +10,16 @@ module.exports = {
   log: {
     level: 'debug'
   },
+  connections: {
+    mysql: {
+      adapter: 'sails-mysql',
+      host: 'localhost',
+      port: 32768,
+      charset: 'utf8'
+    },
+  },
   models: {
-    connection: 'disk',
+    connection: 'mysql',
     migrate: 'alter'
   }
 };
