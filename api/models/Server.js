@@ -9,6 +9,7 @@ var Server = {
   name: 'Server',
   autoPK: true,
   autoCreatedBy: true,
+  schema: true,
   attributes: {
     hostname: {
       type: 'string',
@@ -17,28 +18,35 @@ var Server = {
     },
 
     cpu: {
-      type: 'integer',
-      required: true
+      type: 'integer'
     },
 
     ram: {
-      type: 'float',
-      required: true
+      type: 'float'
     },
 
     swap: {
-      type: 'float',
-      required: true
+      type: 'float'
     },
+
     dns: {
       type: 'json'
     },
 
-
     sid: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
+
+    ipv4: {
+      type: 'string',
+      'ip': true
+    },
+
+    ipv6: {
+      type: 'string',
+      'ip': true
+    },
+
     isDeleted: {
       type: 'boolean',
       defaultsTo: false

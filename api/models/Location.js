@@ -8,6 +8,7 @@
 var Location = {
   name: 'Location',
   autoCreatedBy: true,
+  schema: true,
   attributes: {
     name: {
       type: 'string',
@@ -31,10 +32,10 @@ var Location = {
       via: 'component'
     },
     createdBy: {
-      model: 'User'
+      model: 'user'
     },
     updatedBy: {
-      model: 'User'
+      model: 'user'
     }
   }
 };

@@ -9,24 +9,21 @@ var Metadata = {
   name: 'Metadata',
   autoPK: true,
   autoCreatedBy: true,
+  schema: true,
   attributes: {
     via: {
       type: 'string',
       defaultsTo: 'agent'
     },
-    key: {
-      type: 'string',
+
+    data: {
+      type: 'json',
       required: true
     },
-    value: {
-      type: 'string'
-    },
+
     isDeleted: {
       type: 'boolean',
       defaultsTo: false
-    },
-    type: {
-      type: 'string'
     },
 
     // associations
@@ -35,10 +32,10 @@ var Metadata = {
       via: 'metadata'
     },
     createdBy: {
-      model: 'User'
+      model: 'user'
     },
     updatedBy: {
-      model: 'User'
+      model: 'user'
     }
   }
 };

@@ -9,6 +9,7 @@ var Comment = {
   name: 'Comment',
   autoPK: true,
   autoCreatedBy: true,
+    schema: true,
   attributes: {
     message: {
       type: 'string'

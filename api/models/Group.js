@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = {
+  schema: true,
   attributes: {
     name: {
       type: 'string',
@@ -18,7 +19,7 @@ module.exports = {
     // associations
     users: {
       collection: 'user',
-      via: 'groups'
+      via: 'group'
     }
   }
 }

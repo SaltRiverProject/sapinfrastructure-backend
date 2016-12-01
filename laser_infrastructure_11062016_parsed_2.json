@@ -1,0 +1,2014 @@
+[
+  {
+    "hostname": "SRPLBO00",
+    "component": 1,
+    "sid": "BOP",
+    "dns": [
+      "sapbopdb"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 170,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.067Z",
+    "updatedAt": "2016-11-10T15:24:06.067Z",
+    "id": 1
+  },
+  {
+    "hostname": "SRPLBO01",
+    "component": 1,
+    "sid": "BOP",
+    "dns": [
+      "sapbopdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 60,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.070Z",
+    "updatedAt": "2016-11-10T15:24:06.070Z",
+    "id": 2
+  },
+  {
+    "hostname": "SRPLBO02",
+    "component": 1,
+    "sid": "BOP",
+    "dns": [
+      "sapbopw1"
+    ],
+    "cpu": 2,
+    "ram": 8,
+    "swap": 10,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.076Z",
+    "updatedAt": "2016-11-10T15:24:06.076Z",
+    "id": 3
+  },
+  {
+    "hostname": "SRPLBO03",
+    "component": 1,
+    "sid": "BOP",
+    "dns": [
+      "sapbopp1"
+    ],
+    "cpu": 8,
+    "ram": 48,
+    "swap": 8,
+    "stg": 92,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.078Z",
+    "updatedAt": "2016-11-10T15:24:06.078Z",
+    "id": 4
+  },
+  {
+    "hostname": "SRPLBO04",
+    "component": 1,
+    "sid": "BOP",
+    "dns": [
+      "sapbopp2"
+    ],
+    "cpu": 2,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.079Z",
+    "updatedAt": "2016-11-10T15:24:06.079Z",
+    "id": 5
+  },
+  {
+    "hostname": "SRPLBW00",
+    "component": 2,
+    "sid": "BWP",
+    "dns": [
+      "sapbwpdb"
+    ],
+    "cpu": 4,
+    "ram": 24,
+    "swap": 12,
+    "stg": 1600,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.080Z",
+    "updatedAt": "2016-11-10T15:24:06.080Z",
+    "id": 6
+  },
+  {
+    "hostname": "SRPLBW01",
+    "component": 2,
+    "sid": "BWP",
+    "dns": [
+      "sapbwpdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 1600,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.081Z",
+    "updatedAt": "2016-11-10T15:24:06.081Z",
+    "id": 7
+  },
+  {
+    "hostname": "SRPLBW02",
+    "component": 2,
+    "sid": "BWP",
+    "dns": [
+      "sapbwpm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.082Z",
+    "updatedAt": "2016-11-10T15:24:06.082Z",
+    "id": 8
+  },
+  {
+    "hostname": "SRPLBW03",
+    "component": 2,
+    "sid": "BWP",
+    "dns": [
+      "sapbwpd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.083Z",
+    "updatedAt": "2016-11-10T15:24:06.083Z",
+    "id": 9
+  },
+  {
+    "hostname": "SRPLBW04",
+    "component": 2,
+    "sid": "BWP",
+    "dns": [
+      "sapbwpd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.084Z",
+    "updatedAt": "2016-11-10T15:24:06.084Z",
+    "id": 10
+  },
+  {
+    "hostname": "SRPLBW05",
+    "component": 2,
+    "sid": "BWP",
+    "dns": [
+      "sapbwpd3"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.087Z",
+    "updatedAt": "2016-11-10T15:24:06.087Z",
+    "id": 11
+  },
+  {
+    "hostname": "SRPLEC00",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpdb"
+    ],
+    "cpu": 4,
+    "ram": 24,
+    "swap": 12,
+    "stg": 2000,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.090Z",
+    "updatedAt": "2016-11-10T15:24:06.090Z",
+    "id": 12
+  },
+  {
+    "hostname": "SRPLEC01",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 2000,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.096Z",
+    "updatedAt": "2016-11-10T15:24:06.096Z",
+    "id": 13
+  },
+  {
+    "hostname": "SRPLEC02",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.098Z",
+    "updatedAt": "2016-11-10T15:24:06.098Z",
+    "id": 14
+  },
+  {
+    "hostname": "SRPLEC03",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.099Z",
+    "updatedAt": "2016-11-10T15:24:06.099Z",
+    "id": 15
+  },
+  {
+    "hostname": "SRPLEC04",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.100Z",
+    "updatedAt": "2016-11-10T15:24:06.100Z",
+    "id": 16
+  },
+  {
+    "hostname": "SRPLEC05",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpd3"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.102Z",
+    "updatedAt": "2016-11-10T15:24:06.102Z",
+    "id": 17
+  },
+  {
+    "hostname": "SRPLEC06",
+    "component": 3,
+    "sid": "ECP",
+    "dns": [
+      "sapecpd4"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.103Z",
+    "updatedAt": "2016-11-10T15:24:06.103Z",
+    "id": 18
+  },
+  {
+    "hostname": "SRPLEP00",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpdb"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 12,
+    "stg": 720,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.104Z",
+    "updatedAt": "2016-11-10T15:24:06.104Z",
+    "id": 19
+  },
+  {
+    "hostname": "SRPLEP01",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 720,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.105Z",
+    "updatedAt": "2016-11-10T15:24:06.105Z",
+    "id": 20
+  },
+  {
+    "hostname": "SRPLEP02",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 92,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.107Z",
+    "updatedAt": "2016-11-10T15:24:06.107Z",
+    "id": 21
+  },
+  {
+    "hostname": "SRPLEP03",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 92,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.108Z",
+    "updatedAt": "2016-11-10T15:24:06.108Z",
+    "id": 22
+  },
+  {
+    "hostname": "SRPLEP04",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 92,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.111Z",
+    "updatedAt": "2016-11-10T15:24:06.111Z",
+    "id": 23
+  },
+  {
+    "hostname": "SRPLEP05",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpd3"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 92,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.112Z",
+    "updatedAt": "2016-11-10T15:24:06.112Z",
+    "id": 24
+  },
+  {
+    "hostname": "SRPLEP06",
+    "component": 5,
+    "sid": "PTP",
+    "dns": [
+      "sapptpd4"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 92,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.113Z",
+    "updatedAt": "2016-11-10T15:24:06.113Z",
+    "id": 25
+  },
+  {
+    "hostname": "SRPLGR04",
+    "component": 6,
+    "sid": "GRP",
+    "dns": [
+      "sapgrpd2"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 82,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.115Z",
+    "updatedAt": "2016-11-10T15:24:06.115Z",
+    "id": 26
+  },
+  {
+    "hostname": "SRPLOT00",
+    "component": 7,
+    "sid": "OTP",
+    "dns": [
+      "sapotpdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 180,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.117Z",
+    "updatedAt": "2016-11-10T15:24:06.117Z",
+    "id": 27
+  },
+  {
+    "hostname": "SRPLOT02",
+    "component": 7,
+    "sid": "OTP",
+    "dns": [
+      "sapotpd1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 115,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.118Z",
+    "updatedAt": "2016-11-10T15:24:06.118Z",
+    "id": 28
+  },
+  {
+    "hostname": "SRPLPI00",
+    "component": 8,
+    "sid": "PIP",
+    "dns": [
+      "sappipdb"
+    ],
+    "cpu": 4,
+    "ram": 32,
+    "swap": 12,
+    "stg": 720,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.120Z",
+    "updatedAt": "2016-11-10T15:24:06.120Z",
+    "id": 29
+  },
+  {
+    "hostname": "SRPLPI01",
+    "component": 8,
+    "sid": "PIP",
+    "dns": [
+      "sappipdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 720,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.121Z",
+    "updatedAt": "2016-11-10T15:24:06.121Z",
+    "id": 30
+  },
+  {
+    "hostname": "SRPLPI02",
+    "component": 8,
+    "sid": "PIP",
+    "dns": [
+      "sappipm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.122Z",
+    "updatedAt": "2016-11-10T15:24:06.122Z",
+    "id": 31
+  },
+  {
+    "hostname": "SRPLPI03",
+    "component": 8,
+    "sid": "PIP",
+    "dns": [
+      "sappipd1"
+    ],
+    "cpu": 4,
+    "ram": 32,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.123Z",
+    "updatedAt": "2016-11-10T15:24:06.123Z",
+    "id": 32
+  },
+  {
+    "hostname": "SRPLPI04",
+    "component": 8,
+    "sid": "PIP",
+    "dns": [
+      "sappipd2"
+    ],
+    "cpu": 4,
+    "ram": 32,
+    "swap": 8,
+    "stg": 82,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.124Z",
+    "updatedAt": "2016-11-10T15:24:06.124Z",
+    "id": 33
+  },
+  {
+    "hostname": "SRPLAE00",
+    "component": 9,
+    "sid": "AEP",
+    "dns": [
+      "sapaepdb"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 120,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.126Z",
+    "updatedAt": "2016-11-10T15:24:06.126Z",
+    "id": 34
+  },
+  {
+    "hostname": "SRPLAE01",
+    "component": 9,
+    "sid": "AEP",
+    "dns": [
+      "sapaepdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 120,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.128Z",
+    "updatedAt": "2016-11-10T15:24:06.128Z",
+    "id": 35
+  },
+  {
+    "hostname": "SRPLAE02",
+    "component": 9,
+    "sid": "AEP",
+    "dns": [
+      "sapaepm1"
+    ],
+    "cpu": 999,
+    "ram": 999,
+    "swap": 8,
+    "stg": 82,
+    "location": 3,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.129Z",
+    "updatedAt": "2016-11-10T15:24:06.129Z",
+    "id": 36
+  },
+  {
+    "hostname": "SRPLAE03",
+    "component": 9,
+    "sid": "AEP",
+    "dns": [
+      "sapaepd1"
+    ],
+    "cpu": 999,
+    "ram": 999,
+    "swap": 8,
+    "stg": 82,
+    "location": 3,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.131Z",
+    "updatedAt": "2016-11-10T15:24:06.131Z",
+    "id": 37
+  },
+  {
+    "hostname": "SRPLPP02",
+    "component": 10,
+    "sid": "NULL",
+    "dns": [
+      "sappppd1"
+    ],
+    "cpu": 999,
+    "ram": 999,
+    "swap": 4,
+    "stg": 70,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.132Z",
+    "updatedAt": "2016-11-10T15:24:06.132Z",
+    "id": 38
+  },
+  {
+    "hostname": "SRPLSL00",
+    "component": 11,
+    "sid": "SLP",
+    "dns": [
+      "sapslpdb"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 300,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.133Z",
+    "updatedAt": "2016-11-10T15:24:06.133Z",
+    "id": 39
+  },
+  {
+    "hostname": "SRPLSL01",
+    "component": 11,
+    "sid": "SLP",
+    "dns": [
+      "sapslpdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 300,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.135Z",
+    "updatedAt": "2016-11-10T15:24:06.135Z",
+    "id": 40
+  },
+  {
+    "hostname": "SRPLSL02",
+    "component": 11,
+    "sid": "SLP",
+    "dns": [
+      "sapslpm1"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.136Z",
+    "updatedAt": "2016-11-10T15:24:06.136Z",
+    "id": 41
+  },
+  {
+    "hostname": "SRPLSL03",
+    "component": 11,
+    "sid": "SLP",
+    "dns": [
+      "sapsldd1"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.138Z",
+    "updatedAt": "2016-11-10T15:24:06.138Z",
+    "id": 42
+  },
+  {
+    "hostname": "SRPLSL04",
+    "component": 11,
+    "sid": "SLP",
+    "dns": [
+      "sapslpd2"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.139Z",
+    "updatedAt": "2016-11-10T15:24:06.139Z",
+    "id": 43
+  },
+  {
+    "hostname": "SRPLSR00",
+    "component": 12,
+    "sid": "SRP",
+    "dns": [
+      "sapsrpdb"
+    ],
+    "cpu": 4,
+    "ram": 24,
+    "swap": 12,
+    "stg": 720,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.141Z",
+    "updatedAt": "2016-11-10T15:24:06.141Z",
+    "id": 44
+  },
+  {
+    "hostname": "SRPLSR01",
+    "component": 12,
+    "sid": "SRP",
+    "dns": [
+      "sapsrpdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 720,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.143Z",
+    "updatedAt": "2016-11-10T15:24:06.143Z",
+    "id": 45
+  },
+  {
+    "hostname": "SRPLSR02",
+    "component": 12,
+    "sid": "SRP",
+    "dns": [
+      "sapsrpm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.144Z",
+    "updatedAt": "2016-11-10T15:24:06.144Z",
+    "id": 46
+  },
+  {
+    "hostname": "SRPLSR03",
+    "component": 12,
+    "sid": "SRP",
+    "dns": [
+      "sapsrpd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.146Z",
+    "updatedAt": "2016-11-10T15:24:06.146Z",
+    "id": 47
+  },
+  {
+    "hostname": "SRPLSR04",
+    "component": 12,
+    "sid": "SRP",
+    "dns": [
+      "sapsrpd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 82,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.147Z",
+    "updatedAt": "2016-11-10T15:24:06.147Z",
+    "id": 48
+  },
+  {
+    "hostname": "SRPLVX02",
+    "component": 13,
+    "sid": "VXP",
+    "dns": [
+      "sapvxpd1"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 8,
+    "stg": 70,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.149Z",
+    "updatedAt": "2016-11-10T15:24:06.149Z",
+    "id": 49
+  },
+  {
+    "hostname": "SRPLVX04",
+    "component": 13,
+    "sid": "VXP",
+    "dns": [
+      "sapvxpd2"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 70,
+    "location": 2,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.151Z",
+    "updatedAt": "2016-11-10T15:24:06.151Z",
+    "id": 50
+  },
+  {
+    "hostname": "SRPLWY02",
+    "component": 14,
+    "sid": "WYP",
+    "dns": [
+      "sapwypd1"
+    ],
+    "cpu": 2,
+    "ram": 8,
+    "swap": 8,
+    "stg": 100,
+    "location": 1,
+    "tier": 1,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.153Z",
+    "updatedAt": "2016-11-10T15:24:06.153Z",
+    "id": 51
+  },
+  {
+    "hostname": "SRPLBW20",
+    "component": 2,
+    "sid": "BWQ",
+    "dns": [
+      "sapbwqdb"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 1600,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.155Z",
+    "updatedAt": "2016-11-10T15:24:06.155Z",
+    "id": 52
+  },
+  {
+    "hostname": "SRPLBW21",
+    "component": 2,
+    "sid": "BWQ",
+    "dns": [
+      "sapbwqdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 1600,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.157Z",
+    "updatedAt": "2016-11-10T15:24:06.157Z",
+    "id": 53
+  },
+  {
+    "hostname": "SRPLBW22",
+    "component": 2,
+    "sid": "BWQ",
+    "dns": [
+      "sapbwqm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.159Z",
+    "updatedAt": "2016-11-10T15:24:06.159Z",
+    "id": 54
+  },
+  {
+    "hostname": "SRPLBW23",
+    "component": 2,
+    "sid": "BWQ",
+    "dns": [
+      "sapbwqd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.161Z",
+    "updatedAt": "2016-11-10T15:24:06.161Z",
+    "id": 55
+  },
+  {
+    "hostname": "SRPLBW24",
+    "component": 2,
+    "sid": "BWQ",
+    "dns": [
+      "sapbwqd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.162Z",
+    "updatedAt": "2016-11-10T15:24:06.162Z",
+    "id": 56
+  },
+  {
+    "hostname": "SRPLBW29",
+    "component": 2,
+    "sid": "BWQ",
+    "dns": [
+      "sapbwqc2"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 72,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.164Z",
+    "updatedAt": "2016-11-10T15:24:06.164Z",
+    "id": 57
+  },
+  {
+    "hostname": "SRPLEC20",
+    "component": 3,
+    "sid": "ECQ",
+    "dns": [
+      "sapecqdb"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 2000,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.166Z",
+    "updatedAt": "2016-11-10T15:24:06.166Z",
+    "id": 58
+  },
+  {
+    "hostname": "SRPLEC21",
+    "component": 3,
+    "sid": "ECQ",
+    "dns": [
+      "sapecqdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 2000,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.169Z",
+    "updatedAt": "2016-11-10T15:24:06.169Z",
+    "id": 59
+  },
+  {
+    "hostname": "SRPLEC22",
+    "component": 3,
+    "sid": "ECQ",
+    "dns": [
+      "sapecqm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.170Z",
+    "updatedAt": "2016-11-10T15:24:06.170Z",
+    "id": 60
+  },
+  {
+    "hostname": "SRPLEC23",
+    "component": 3,
+    "sid": "ECQ",
+    "dns": [
+      "sapecqd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.172Z",
+    "updatedAt": "2016-11-10T15:24:06.172Z",
+    "id": 61
+  },
+  {
+    "hostname": "SRPLEC24",
+    "component": 3,
+    "sid": "ECQ",
+    "dns": [
+      "sapecqd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.173Z",
+    "updatedAt": "2016-11-10T15:24:06.173Z",
+    "id": 62
+  },
+  {
+    "hostname": "SRPLEP20",
+    "component": 5,
+    "sid": "PTQ",
+    "dns": [
+      "sapptqdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 80,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.175Z",
+    "updatedAt": "2016-11-10T15:24:06.175Z",
+    "id": 63
+  },
+  {
+    "hostname": "SRPLEP21",
+    "component": 5,
+    "sid": "PTQ",
+    "dns": [
+      "sapptqdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 480,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.177Z",
+    "updatedAt": "2016-11-10T15:24:06.177Z",
+    "id": 64
+  },
+  {
+    "hostname": "SRPLEP22",
+    "component": 5,
+    "sid": "PTQ",
+    "dns": [
+      "sapptqm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 92,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.179Z",
+    "updatedAt": "2016-11-10T15:24:06.179Z",
+    "id": 65
+  },
+  {
+    "hostname": "SRPLEP23",
+    "component": 5,
+    "sid": "PTQ",
+    "dns": [
+      "sapptqd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 92,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.180Z",
+    "updatedAt": "2016-11-10T15:24:06.180Z",
+    "id": 66
+  },
+  {
+    "hostname": "SRPLEP24",
+    "component": 5,
+    "sid": "PTQ",
+    "dns": [
+      "sapptqd2"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 92,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.182Z",
+    "updatedAt": "2016-11-10T15:24:06.182Z",
+    "id": 67
+  },
+  {
+    "hostname": "SRPLEP29",
+    "component": 5,
+    "sid": "PTQ",
+    "dns": [
+      "sapptqd3"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 50,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.185Z",
+    "updatedAt": "2016-11-10T15:24:06.185Z",
+    "id": 68
+  },
+  {
+    "hostname": "SRPLOT20",
+    "component": 7,
+    "sid": "OTQ",
+    "dns": [
+      "sapotqdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 145,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.187Z",
+    "updatedAt": "2016-11-10T15:24:06.187Z",
+    "id": 69
+  },
+  {
+    "hostname": "SRPLOT22",
+    "component": 7,
+    "sid": "OTQ",
+    "dns": [
+      "sapotqd1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 115,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.189Z",
+    "updatedAt": "2016-11-10T15:24:06.189Z",
+    "id": 70
+  },
+  {
+    "hostname": "SRPLPI20",
+    "component": 8,
+    "sid": "PIQ",
+    "dns": [
+      "sappiqdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 520,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.190Z",
+    "updatedAt": "2016-11-10T15:24:06.190Z",
+    "id": 71
+  },
+  {
+    "hostname": "SRPLPI21",
+    "component": 8,
+    "sid": "PIQ",
+    "dns": [
+      "sappiqdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 440,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.192Z",
+    "updatedAt": "2016-11-10T15:24:06.192Z",
+    "id": 72
+  },
+  {
+    "hostname": "SRPLPI22",
+    "component": 8,
+    "sid": "PIQ",
+    "dns": [
+      "sappiqm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.194Z",
+    "updatedAt": "2016-11-10T15:24:06.194Z",
+    "id": 73
+  },
+  {
+    "hostname": "SRPLPI23",
+    "component": 8,
+    "sid": "PIQ",
+    "dns": [
+      "sappiqd1"
+    ],
+    "cpu": 4,
+    "ram": 32,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.196Z",
+    "updatedAt": "2016-11-10T15:24:06.196Z",
+    "id": 74
+  },
+  {
+    "hostname": "SRPLPI24",
+    "component": 8,
+    "sid": "PIQ",
+    "dns": [
+      "sappiqd2"
+    ],
+    "cpu": 4,
+    "ram": 32,
+    "swap": 8,
+    "stg": 82,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.197Z",
+    "updatedAt": "2016-11-10T15:24:06.197Z",
+    "id": 75
+  },
+  {
+    "hostname": "SRPLAE20",
+    "component": 9,
+    "sid": "AEQ",
+    "dns": [
+      "sapaeqdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 120,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.200Z",
+    "updatedAt": "2016-11-10T15:24:06.200Z",
+    "id": 76
+  },
+  {
+    "hostname": "SRPLAE21",
+    "component": 9,
+    "sid": "AEQ",
+    "dns": [
+      "sapaeqdg"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 120,
+    "location": 2,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.202Z",
+    "updatedAt": "2016-11-10T15:24:06.202Z",
+    "id": 77
+  },
+  {
+    "hostname": "SRPLAE22",
+    "component": 9,
+    "sid": "AEQ",
+    "dns": [
+      "sapaeqm1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 82,
+    "location": 3,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.205Z",
+    "updatedAt": "2016-11-10T15:24:06.205Z",
+    "id": 78
+  },
+  {
+    "hostname": "SRPLAE23",
+    "component": 9,
+    "sid": "AEQ",
+    "dns": [
+      "sapaeqd1"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 82,
+    "location": 3,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.207Z",
+    "updatedAt": "2016-11-10T15:24:06.207Z",
+    "id": 79
+  },
+  {
+    "hostname": "SRPLSR20",
+    "component": 12,
+    "sid": "SRQ",
+    "dns": [
+      "sapsrqdb"
+    ],
+    "cpu": 4,
+    "ram": 24,
+    "swap": 12,
+    "stg": 330,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.209Z",
+    "updatedAt": "2016-11-10T15:24:06.209Z",
+    "id": 80
+  },
+  {
+    "hostname": "SRPLSR23",
+    "component": 12,
+    "sid": "SRQ",
+    "dns": [
+      "sapsrqd1"
+    ],
+    "cpu": 2,
+    "ram": 24,
+    "swap": 8,
+    "stg": 72,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.211Z",
+    "updatedAt": "2016-11-10T15:24:06.211Z",
+    "id": 81
+  },
+  {
+    "hostname": "SRPLVX22",
+    "component": 13,
+    "sid": "VXQ",
+    "dns": [
+      "sapvxqd1"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 8,
+    "stg": 70,
+    "location": 1,
+    "tier": 2,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.213Z",
+    "updatedAt": "2016-11-10T15:24:06.213Z",
+    "id": 82
+  },
+  {
+    "hostname": "SRPLBW40",
+    "component": 2,
+    "sid": "BWT",
+    "dns": [
+      "sapbwtdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 1600,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.215Z",
+    "updatedAt": "2016-11-10T15:24:06.215Z",
+    "id": 83
+  },
+  {
+    "hostname": "SRPLBW42",
+    "component": 2,
+    "sid": "BWT",
+    "dns": [
+      "sapbwtd1",
+      "sapbwtm1",
+      "sapbwtm2"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 102,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.217Z",
+    "updatedAt": "2016-11-10T15:24:06.217Z",
+    "id": 84
+  },
+  {
+    "hostname": "SRPLDS40",
+    "component": 15,
+    "sid": "DST",
+    "dns": [
+      "sapdstdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 170,
+    "location": 1,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.219Z",
+    "updatedAt": "2016-11-10T15:24:06.219Z",
+    "id": 85
+  },
+  {
+    "hostname": "SRPLDS42",
+    "component": 15,
+    "sid": "DST",
+    "dns": [
+      "sapdstp1"
+    ],
+    "cpu": 4,
+    "ram": 16,
+    "swap": 8,
+    "stg": 82,
+    "location": 1,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.221Z",
+    "updatedAt": "2016-11-10T15:24:06.221Z",
+    "id": 86
+  },
+  {
+    "hostname": "SRPLEC40",
+    "component": 3,
+    "sid": "ECT",
+    "dns": [
+      "sapectdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 1600,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.223Z",
+    "updatedAt": "2016-11-10T15:24:06.223Z",
+    "id": 87
+  },
+  {
+    "hostname": "SRPLEC42",
+    "component": 3,
+    "sid": "ECT",
+    "dns": [
+      "sapectd1",
+      "sapectm1",
+      "sapectm2"
+    ],
+    "cpu": 4,
+    "ram": 16,
+    "swap": 8,
+    "stg": 82,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.226Z",
+    "updatedAt": "2016-11-10T15:24:06.226Z",
+    "id": 88
+  },
+  {
+    "hostname": "SRPLEP40",
+    "component": 5,
+    "sid": "PTT",
+    "dns": [
+      "sappttdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 80,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.228Z",
+    "updatedAt": "2016-11-10T15:24:06.228Z",
+    "id": 89
+  },
+  {
+    "hostname": "SRPLEP42",
+    "component": 5,
+    "sid": "PTT",
+    "dns": [
+      "sappttd1",
+      "sappttm1",
+      "sappttm2"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 92,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.230Z",
+    "updatedAt": "2016-11-10T15:24:06.230Z",
+    "id": 90
+  },
+  {
+    "hostname": "SRPLOT40",
+    "component": 7,
+    "sid": "OTT",
+    "dns": [
+      "SAPOTTDB"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 145,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.232Z",
+    "updatedAt": "2016-11-10T15:24:06.232Z",
+    "id": 91
+  },
+  {
+    "hostname": "SRPLOT42",
+    "component": 7,
+    "sid": "OTT",
+    "dns": [
+      "SAPOTTD1"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 120,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.234Z",
+    "updatedAt": "2016-11-10T15:24:06.234Z",
+    "id": 92
+  },
+  {
+    "hostname": "SRPLPI40",
+    "component": 8,
+    "sid": "PIT",
+    "dns": [
+      "sappitdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 240,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.236Z",
+    "updatedAt": "2016-11-10T15:24:06.236Z",
+    "id": 93
+  },
+  {
+    "hostname": "SRPLPI42",
+    "component": 8,
+    "sid": "PIT",
+    "dns": [
+      "sappitd1",
+      "sappitm1",
+      "sappitm2"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 102,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.239Z",
+    "updatedAt": "2016-11-10T15:24:06.239Z",
+    "id": 94
+  },
+  {
+    "hostname": "SRPLSR40",
+    "component": 12,
+    "sid": "SRT",
+    "dns": [
+      "sapsrtdb"
+    ],
+    "cpu": 2,
+    "ram": 16,
+    "swap": 12,
+    "stg": 220,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.241Z",
+    "updatedAt": "2016-11-10T15:24:06.241Z",
+    "id": 95
+  },
+  {
+    "hostname": "SRPLSR42",
+    "component": 12,
+    "sid": "SRT",
+    "dns": [
+      "sapsrtd1",
+      "sapsrtm1",
+      "sapsrtm2"
+    ],
+    "cpu": 1,
+    "ram": 16,
+    "swap": 8,
+    "stg": 102,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.243Z",
+    "updatedAt": "2016-11-10T15:24:06.243Z",
+    "id": 96
+  },
+  {
+    "hostname": "SRPLVX42",
+    "component": 13,
+    "sid": "VXT",
+    "dns": [
+      "sapvxtd1"
+    ],
+    "cpu": 2,
+    "ram": 8,
+    "swap": 8,
+    "stg": 70,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.246Z",
+    "updatedAt": "2016-11-10T15:24:06.246Z",
+    "id": 97
+  },
+  {
+    "hostname": "SRPLAE40",
+    "component": 9,
+    "sid": "AET",
+    "dns": [
+      "sapaetdb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 150,
+    "location": 2,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.248Z",
+    "updatedAt": "2016-11-10T15:24:06.248Z",
+    "id": 98
+  },
+  {
+    "hostname": "SRPLAE42",
+    "component": 9,
+    "sid": "AET",
+    "dns": [
+      "sapaetd1",
+      "sapaetm1",
+      "sapaetm2"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 8,
+    "stg": 102,
+    "location": 3,
+    "tier": 3,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.249Z",
+    "updatedAt": "2016-11-10T15:24:06.249Z",
+    "id": 99
+  },
+  {
+    "hostname": "SRPLBW60",
+    "component": 2,
+    "sid": "BWD",
+    "dns": [
+      "sapbwddb"
+    ],
+    "cpu": 1,
+    "ram": 8,
+    "swap": 12,
+    "stg": 1000,
+    "location": 2,
+    "tier": 4,
+    "createdBy": 1,
+    "updatedBy": 1,
+    "isDeleted": false,
+    "createdAt": "2016-11-10T15:24:06.252Z",
+    "updatedAt": "2016-11-10T15:24:06.252Z",
+    "id": 100
+  }
+]

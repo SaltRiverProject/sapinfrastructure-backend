@@ -14,10 +14,10 @@ autoAdmin = function (sails) {
     sails.log('Email        : ' + user.email);
 
     if (sails.config.autoAdmin.enableActivation){
-      sails.log('Activated    : ' + user.activated);
+      sails.log('Activated  : ' + user.activated);
     }
     sails.log('Password     : ' + sails.config.autoAdmin.user.password);
-    sails.log('Groups       : [ ' + user.getGroupNames(user).join(', ') + ' ]');
+    sails.log('Group        : ' + user.group.name);
   }
 
   return {
@@ -30,7 +30,7 @@ autoAdmin = function (sails) {
           lastName: 'User',
           email: 'admin@admin.com',
           password: '12345',
-          groups: [1]
+          group: 'Admins'
         },
         groups: [
           {
@@ -60,7 +60,12 @@ autoAdmin = function (sails) {
             name: group.name
           }, group)
           .then(function (group) {
-            sails.log.debug('hooks::autoAdmin - created group', group.name);
+            if(!group) {
+              sails.log.error('group not found or created')
+              cb('group not found or created')
+            }
+
+            sails.log.debug('hooks::autoAdmin - found or created group', group.name);
             Groups.push(group)
             cb();
           })
@@ -81,16 +86,9 @@ autoAdmin = function (sails) {
           })
           .then(function (user) {
             var newUser = _.merge({}, config.user)
-            var groups = []
+            var groupIndex = _.findIndex(Groups, { name: newUser.group })
+            newUser.group = Groups[groupIndex].id
 
-            _.each(newUser.groups, function (group, index) {
-              var groupIndex = _.findIndex(Groups, { name: group })
-              if (groupIndex !== -1) {
-                groups.push(Groups[groupIndex].id)
-              }
-            })
-
-            newUser.groups = groups
             if (!user) {
               return User
               .create(newUser)
@@ -107,8 +105,13 @@ autoAdmin = function (sails) {
             return User.findOne({
               id: user.id
             })
-            .populate('groups')
+            .populate('group')
             .then(function (user) {
+              if (!user) {
+                sails.log.error('unable to fetch user');
+                return next('unable to fetch user');
+              }
+
               return user;
             })
             .then(function (user) {

@@ -4,6 +4,7 @@ var Agent = {
   name: 'Agent',
   autoPK: true,
   autoCreatedBy: false,
+  schema: true,
   attributes: {
     agentKey: {
       type: 'string'

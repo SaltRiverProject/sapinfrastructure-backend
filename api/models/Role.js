@@ -1,5 +1,6 @@
 var Role = {
   name: 'Role',
+  schema: true,
   attributes: {
     name: {
       type: 'text',
@@ -16,14 +17,14 @@ var Role = {
 
     // associations
     servers: {
-      collection: 'Server',
+      collection: 'server',
       via: 'roles'
     },
     createdBy: {
-      model: 'User'
+      model: 'user'
     },
     updatedBy: {
-      model: 'User'
+      model: 'user'
     }
   },
 };

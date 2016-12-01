@@ -2,6 +2,7 @@ var RequestLog = {
   name: 'RequestLog',
   autoPK: false,
   autoCreatedBy: false,
+    schema: true,
   attributes: {
     id: {
       type: 'string',

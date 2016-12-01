@@ -11,8 +11,8 @@ module.exports = (req, res, next) => {
     return next({code: 400, message: 'Only socket requests are allowed to connect.'})
   }
 
-  var authorization = req.body.headers.authorization.split('Bearer ')
-  if (!req.body.headers.authorization) {
+  var authorization = req.headers.authorization.split('Bearer ')
+  if (!authorization) {
     return next({ code: 401, message: 'No Authorization Header provided' })
   }
 
@@ -27,7 +27,6 @@ module.exports = (req, res, next) => {
 
     req.agent = agent
     Server.findOne({
-      hostname: req.body.headers.host,
       id: agent.server
     })
     .then((server) => {

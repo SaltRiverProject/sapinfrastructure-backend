@@ -7,6 +7,7 @@ var _ = require('lodash');
 
 module.exports = {
   autoCreatedBy: true,
+  schema: true,
   attributes: {
     username: {
       type: 'string',
@@ -54,9 +55,8 @@ module.exports = {
     },
 
     // associations
-    groups: {
-      collection: 'group',
-      via: 'users'
+    group: {
+      model: 'group'
     },
     createdBy: {
       model: 'user'
@@ -71,16 +71,6 @@ module.exports = {
       delete obj.socialProfiles;
 
       return obj;
-    },
-
-    /**
-     * returns an array of group names the user belongs to
-     * @TODO error handling
-     */
-    getGroupNames: function (user) {
-      return user.groups.map(function (group, index)  {
-        return group.name;
-      });
     }
   },
 

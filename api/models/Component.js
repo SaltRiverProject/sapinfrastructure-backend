@@ -9,6 +9,7 @@ var Component = {
   name: 'Component',
   autoPK: true,
   autoCreatedBy: true,
+  schema: true,
   attributes: {
     name: {
       type: 'string',
@@ -31,10 +32,10 @@ var Component = {
       via: 'component'
     },
     createdBy: {
-      model: 'User'
+      model: 'user'
     },
     updatedBy: {
-      model: 'User'
+      model: 'user'
     }
   }
 };

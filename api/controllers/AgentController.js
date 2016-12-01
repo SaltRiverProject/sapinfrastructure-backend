@@ -12,50 +12,13 @@ module.exports = {
   report: (req, res) => {
     var info = req.body
     var agent = req.agent
-    var preppedInfo = []
-    _.each(info.osinfo, function (value, key) {
-      preppedInfo.push({
-        key: key,
-        value: value,
-        via: 'agent',
-        agent: agent.id,
-        type: 'osinfo'
-      })
-    })
 
-    _.each(info.cpu, function (value, key) {
-      preppedInfo.push({
-        key: key,
-        value: value,
-        via: 'agent',
-        agent: agent.id,
-        type: 'cpuinfo'
-      })
-    })
-
-    _.each(info.memory, function (value, key) {
-      preppedInfo.push({
-        key: key,
-        value: value,
-        via: 'agent',
-        agent: agent.id,
-        type: 'memory'
-      })
-    })
-
-    _.each(info.swap, function (value, key) {
-      preppedInfo.push({
-        key: key,
-        value: value,
-        via: 'agent',
-        agent: agent.id,
-        type: 'swap'
-      })
-    })
-
-    // sails.log.debug(JSON.stringify(preppedInfo, null, 2))
     Metadata
-    .create(preppedInfo)
+    .create({
+      via: 'agent',
+      agent: agent.id,
+      data: info
+    })
     .then((metadata) => {
       res.ok(metadata)
     })
@@ -83,13 +46,13 @@ module.exports = {
     }
   },
   register: (req, res) => {
-    const hostname = req.body.hostname
-    const osinfo = req.body.osinfo
-    const ipv4 = req.body.ipv4
-    const ipv6 = req.body.ipv6
+    if (!req.body.hostname) {
+      const err = { code: 'E_INVALID_PAYLOAD', status: 404, message: 'Looks like the hostname wasn\t provided.'}
+      return res.negotiate(err)
+    }
 
-    Server.findOne({
-      hostname: hostname
+    Server.findOrCreate({
+      hostname: req.body.hostname
     })
     .then((server) => {
       if (!server) {
@@ -109,9 +72,9 @@ module.exports = {
       if (!agent) {
         return Server
         .update({ id: server.id }, {
-          hostname: 'SRPLEC00',
-          ipv4: ipv4,
-          ipv6: ipv6
+          hostname: server.hostname,
+          ipv4: req.body.ipv4,
+          ipv6: req.body.ipv6
         })
         .then((server) => {
           server = server[0]
@@ -124,11 +87,18 @@ module.exports = {
           })
         })
       } else {
-        throw { code: 'E_AGENT_ALREADY_REGISTERED', status: 500, message: 'Trying to register an already registerd agent.'}
+        throw { code: 'E_AGENT_ALREADY_REGISTERED', status: 500, message: 'Trying to register an already registered agent.'}
       }
     })
     .then((agent) => {
-      res.ok(agent)
+      return Server.update({
+        hostname: req.body.hostname
+      }, {
+        agent: agent.id
+      })
+      .then((server) => {
+        res.ok(agent)
+      })
     })
     .catch((err) => {
       return res.negotiate(err)

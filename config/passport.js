@@ -46,10 +46,9 @@ const JWT_STRATEGY_CONFIG = {
   secretOrKey: '2546dd38b356dafb9ea2f6ed75586f883f3c3f1a55f1edc630b3d7eb3689d54e',
   jwtFromRequest: ExtractJwt.versionOneCompatibility({
     authScheme: 'Bearer',
-    tokenBodyField: 'access_token'
+    tokenBodyField: 'access_token',
+    tokenQueryParameterName: 'access_token'
   }),
-  tokenQueryParameterName: 'access_token',
-  authScheme: 'Bearer',
   session: false,
   passReqToCallback: true
 };
@@ -70,12 +69,12 @@ const _onLdapStrategyAuth = (req, user, next) => {
     firstName: user.givenName,
     accountType: 'ldap',
     lastName: user.sn,
-    groups: [ 2 ]
+    group: 2
   };
 
   User
     .findOne({ username: user.uid })
-    .populate('groups')
+    .populate('group')
     .then((user) => {
       if (!user) {
         return User
@@ -89,7 +88,7 @@ const _onLdapStrategyAuth = (req, user, next) => {
     })
     .then((user) => {
       User.findOne({ id: user.id })
-      .populate('groups')
+      .populate('group')
       .then((user) => {
         return next(null, user)
       })
@@ -108,7 +107,7 @@ const _onLdapStrategyAuth = (req, user, next) => {
 const _onLocalStrategyAuth = (req, username, password, next) => {
   User
     .findOne({[LOCAL_STRATEGY_CONFIG.usernameField]: username})
-    .populate('groups')
+    .populate('group')
     .then(user => {
       user.lastLogin = new Date()
       user.save((err) => {

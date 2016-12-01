@@ -9,6 +9,7 @@ var Tier = {
   name: 'Tier',
   autoPK: true,
   autoCreatedBy: true,
+  schema: true,
   attributes: {
     name: {
       type: 'string',
@@ -29,6 +30,9 @@ var Tier = {
     servers: {
       collection: 'server',
       via: 'tier'
+    },
+    landscape: {
+      model: 'landscape'
     },
     createdBy: {
       model: 'user'
