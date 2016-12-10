@@ -1,8 +1,8 @@
 module.exports.sockets = {
-  adapter: 'socket.io-redis',
-  host: '127.0.0.1',
-  port: 6379,
-  db: 'sapinfrastructure-sockets',
+  // adapter: 'socket.io-redis',
+  // host: '127.0.0.1',
+  // port: 6379,
+  // db: 'sapinfrastructure-sockets',
   afterDisconnect: function(session, socket, cb) {
     sails.log.debug('socket id:', socket.id, 'disconnected.')
     Agent.update({ socketId: socket.id }, { connected: false })

@@ -9,13 +9,13 @@ module.exports = {
   port: 1337,
   host: '0.0.0.0',
   log: {
-    level: 'silly'
+    level: 'debug'
   },
   connections: {
     mysql: {
       adapter: 'sails-mysql',
       host: 'localhost',
-      port: 32768,
+      port: 32770,
       charset: 'utf8'
     },
   },
